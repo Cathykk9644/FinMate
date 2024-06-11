@@ -17,14 +17,13 @@ const SideBar = ({ user }: SiderbarProps) => {
         <Link href="/" className="flex mb-12 cursor-pointer items-center gap-2">
           <Image
             src="/icons/logo.svg"
-            width={34}
-            height={34}
+            width={36}
+            height={36}
             alt="FinMate Logo"
-            className="size-[36px] max-xl:size-14"
+            className="size-[24px] max-xl:size-16"
           />
           <h1 className="sidebar-logo">FinMate</h1>
         </Link>
-
         {sidebarLinks.map((item) => {
           const isActive =
             pathname === item.route || pathname.startsWith(`${item.route}/`);
@@ -51,7 +50,9 @@ const SideBar = ({ user }: SiderbarProps) => {
             </Link>
           );
         })}
+        USER
       </nav>
+      FOOTER
     </section>
   );
 };

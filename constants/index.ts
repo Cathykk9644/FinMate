@@ -23,7 +23,7 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/connect-bank.svg",
     route: "/budget-planning",
-    label: "Personal Budget",
+    label: "My Budget",
   },
 ];
 

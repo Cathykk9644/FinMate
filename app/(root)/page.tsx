@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="home-content">
         <HeaderBox
           type="greeting"
-          title="👋 Welcome"
+          title="👋 😉 Welcome"
           user={loggedIn?.firstName || "Guest"}
           subtext="Access and manage your personal account and transaction effectively."
         />
