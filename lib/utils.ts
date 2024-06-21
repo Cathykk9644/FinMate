@@ -200,4 +200,6 @@ export const authFormSchema = z.object({
   password: z.string().min(8),
   firstName: z.string().min(2),
   lastName: z.string().min(2),
+  address1: z.string().max(60),
+  dateOfBirth: z.string().min(6),
 });
