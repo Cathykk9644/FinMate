@@ -18,6 +18,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+
 import { Input } from "@/components/ui/input";
 import { ITEMS } from "@/constants";
 import { Divide, LoaderCircle } from "lucide-react";
@@ -63,7 +64,7 @@ const AuthForm = ({ type }: { type: string }) => {
         <div className="flex flex-col gap-1 md:gap-3">
           <h1 className="text-24 lg:text-34 font-semibold text-gray-600">
             {user ? "Link Account" : type === "sign-in" ? "Sign In" : "Sign Up"}
-            <p className="text-16 font-normal text-gray-600">
+            <p className="text-14 mt-2 font-normal text-gray-500">
               {user
                 ? "Connect your account to get started"
                 : "Please enter your details here"}
@@ -94,20 +95,36 @@ const AuthForm = ({ type }: { type: string }) => {
                 label="Password"
                 placeholder="Enter your password"
               />
-              <Button className="form-btn" type="submit" disabled={isLoading}>
-                {isLoading ? (
-                  <>
-                    <LoaderCircle size={20} className="animate-spin" /> &nbsp;
-                    Loading...
-                  </>
-                ) : type === "sign-in" ? (
-                  "Sign In"
-                ) : (
-                  "Sign Up"
-                )}
-              </Button>
+
+              <div className="flex flex-col gap-4">
+                <Button className="form-btn" type="submit" disabled={isLoading}>
+                  {isLoading ? (
+                    <>
+                      <LoaderCircle size={20} className="animate-spin" /> &nbsp;
+                      Loading...
+                    </>
+                  ) : type === "sign-in" ? (
+                    "Sign In"
+                  ) : (
+                    "Sign Up"
+                  )}
+                </Button>
+              </div>
             </form>
           </Form>
+          <footer className="flex justify-center gap-1">
+            <p className="text-14 font-normal text-gray-600">
+              {type === "sign-in"
+                ? "Don't have an account?"
+                : "Already got an account?"}
+            </p>
+            <Link
+              href={type === "sign-in" ? "/sign-up" : "/sign-in"}
+              className="form-link"
+            >
+              {type === "sign-in" ? "Sign up" : "Sign in"}
+            </Link>
+          </footer>
         </>
       )}
     </section>
