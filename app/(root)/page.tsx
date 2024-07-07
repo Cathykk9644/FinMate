@@ -1,21 +1,18 @@
 import BalanceBox from "@/components/BalanceBox";
 import HeaderBox from "@/components/HeaderBox";
 import RightSideBar from "@/components/RightSideBar";
+import { getLoggedInUser } from "@/lib/actions/user.actions";
 import React from "react";
 
-const HomePage = () => {
-  const loggedIn = {
-    firstName: "Cathy",
-    lastName: "Hui",
-    email: "contact@gmail.com",
-  };
+const HomePage = async () => {
+  const loggedIn = await getLoggedInUser();
   return (
     <section className="home">
       <div className="home-content">
         <HeaderBox
           type="greeting"
           title="👋 👋 Welcome"
-          user={loggedIn?.firstName || "Guest"}
+          user={loggedIn?.name || "Guest"}
           subtext="Access and manage your personal account and transaction effectively."
         />
         <BalanceBox
