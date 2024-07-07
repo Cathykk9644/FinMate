@@ -30,7 +30,7 @@ import { getLoggedInUser, signIn, signUp } from "@/lib/actions/user.actions";
 const AuthForm = ({ type }: { type: string }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter;
+  const router = useRouter();
 
   const formSchema = authFormSchema(type);
 
@@ -103,7 +103,7 @@ const AuthForm = ({ type }: { type: string }) => {
       ) : (
         <>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               {type === "sign-up" && (
                 <>
                   <div className="flex gap-4 justify-between">
