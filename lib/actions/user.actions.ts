@@ -30,7 +30,7 @@ export const signUp = async (userData: SignUpParams) => {
       ID.unique(),
       email,
       password,
-      `${firstName}${lastName}`
+      `${firstName} ${lastName}`
     );
 
     const session = await account.createEmailPasswordSession(email, password);
@@ -53,6 +53,7 @@ export async function getLoggedInUser() {
   try {
     const { account } = await createSessionClient();
     const user = await account.get();
+
     return parseStringify(user);
   } catch (error) {
     return null;
@@ -69,4 +70,7 @@ export async function logoutAccount() {
   } catch (error) {
     return null;
   }
+}
+function getUserInfo(arg0: { userId: string }) {
+  throw new Error("Function not implemented.");
 }

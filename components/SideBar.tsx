@@ -16,11 +16,11 @@ const SideBar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="flex mb-12 cursor-pointer items-center gap-2">
           <Image
-            src="/icons/logo.svg"
-            width={36}
-            height={36}
+            src="/icons/logo.png"
+            width={120}
+            height={120}
             alt="FinMate Logo"
-            className="size-[24px] max-xl:size-16"
+            className="mt-4 sm:mt-2 w-4 h-4 sm:w-16 sm:h-16 "
           />
           <h1 className="sidebar-logo">FinMate</h1>
         </Link>
@@ -52,7 +52,7 @@ const SideBar = ({ user }: SiderbarProps) => {
         })}
         USER
       </nav>
-      FOOTER
+      <Footer user={user} />
     </section>
   );
 };
