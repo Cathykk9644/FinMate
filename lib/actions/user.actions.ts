@@ -1,22 +1,25 @@
 "use server";
 
 import { ID } from "node-appwrite";
-import { createAdminClient, createSessionClient } from "./appwrite";
+import { createAdminClient, createSessionClient } from "../appwrite";
 import { cookies } from "next/headers";
 import { parseStringify } from "../utils";
 
 export const signIn = async ({ email, password }: signInProps) => {
   try {
-    // Mutation / Database / Make fetch request
-
     const { account } = await createAdminClient();
 
-    const response = await account.createEmailPasswordSession(email, password);
+    const session = await account.createEmailPasswordSession(email, password);
+    cookies().set("appwrite-session", session.secret, {
+      path: "/",
+      httpOnly: true,
+      sameSite: "strict",
+      secure: true,
+    });
 
-    return parseStringify(response);
+    return parseStringify(session);
   } catch (error) {
     console.error("Failed to sign in user:", error);
-    throw error;
   }
 };
 
@@ -56,6 +59,7 @@ export async function getLoggedInUser() {
 
     return parseStringify(user);
   } catch (error) {
+    console.log(error);
     return null;
   }
 }
@@ -70,7 +74,4 @@ export async function logoutAccount() {
   } catch (error) {
     return null;
   }
-}
-function getUserInfo(arg0: { userId: string }) {
-  throw new Error("Function not implemented.");
 }
