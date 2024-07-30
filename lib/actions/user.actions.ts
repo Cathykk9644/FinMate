@@ -21,6 +21,7 @@ const {
   APPWRITE_BANK_COLLECTION_ID: BANK_COLLECTION_ID,
 } = process.env;
 
+// fetch users from database
 export const getUserInfo = async ({ userId }: getUserInfoProps) => {
   try {
     const { database } = await createAdminClient();
