@@ -39,35 +39,6 @@ export const signIn = async ({ email, password }: signInProps) => {
   }
 };
 
-// export const signUp = async (userData: SignUpParams) => {
-//   const { email, password, firstName, lastName } = userData;
-
-//   try {
-//     const { account } = await createAdminClient();
-
-//     const newUserAccount = await account.create(
-//       ID.unique(),
-//       email,
-//       password,
-//       `${firstName} ${lastName}`
-//     );
-
-//     const session = await account.createEmailPasswordSession(email, password);
-
-//     cookies().set("appwrite-session", session.secret, {
-//       path: "/",
-//       httpOnly: true,
-//       sameSite: "strict",
-//       secure: true,
-//     });
-
-//     return parseStringify(newUserAccount);
-//   } catch (error) {
-//     console.error("Failed to sign up user:", error);
-//     throw error;
-//   }
-// };
-
 export const signUp = async ({ password, ...userData }: SignUpParams) => {
   const { email, firstName, lastName } = userData;
 
