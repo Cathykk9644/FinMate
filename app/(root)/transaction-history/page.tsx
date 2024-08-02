@@ -32,6 +32,7 @@ const TransactionHistory = async ({
     indexOfFirstTransaction,
     indexOfLastTransaction
   );
+
   return (
     <div className="transactions">
       <div className="transactions-header">
