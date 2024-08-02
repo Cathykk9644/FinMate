@@ -31,7 +31,7 @@ const HomePage = async ({ searchParams: { id, page } }: SearchParamProps) => {
           subtext="Access and manage your personal account and transaction effectively."
         />
         <BalanceBox
-          accounts={[accountsData]}
+          accounts={accountsData}
           totalBanks={accounts?.totalBanks}
           totalCurrentBalance={accounts?.totalCurrentBalance}
         />
