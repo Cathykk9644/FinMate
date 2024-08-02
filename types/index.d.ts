@@ -186,7 +186,7 @@ declare interface PlaidLinkProps {
 //   items: string[];
 //   accessToken: string;
 //   image: string;
-// };
+// };a
 
 declare interface AuthFormProps {
   type: "sign-in" | "sign-up";

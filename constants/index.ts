@@ -21,9 +21,9 @@ export const sidebarLinks = [
     label: "Transaction History",
   },
   {
-    imgURL: "/icons/connect-bank.svg",
-    route: "/budget-planning",
-    label: "My Budget",
+    imgURL: "/icons/shopping-bag.svg",
+    route: "/my-spending",
+    label: "Spending Overview",
   },
 ];
 
