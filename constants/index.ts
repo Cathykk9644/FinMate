@@ -21,7 +21,7 @@ export const sidebarLinks = [
     label: "Transaction History",
   },
   {
-    imgURL: "/icons/shopping-bag.svg",
+    imgURL: "/icons/deposit.svg",
     route: "/my-spending",
     label: "Spending Overview",
   },
