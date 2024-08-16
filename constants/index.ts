@@ -20,21 +20,11 @@ export const sidebarLinks = [
     route: "/transaction-history",
     label: "Transaction History",
   },
-  {
-    imgURL: "/icons/deposit.svg",
-    route: "/my-spending",
-    label: "Spending Overview",
-  },
 ];
 
 // good_user / good_password - Bank of America
 export const TEST_USER_ID = "6627ed3d00267aa6fa3e";
 
-// custom_user -> Chase Bank
-// export const TEST_ACCESS_TOKEN =
-//   "access-sandbox-da44dac8-7d31-4f66-ab36-2238d63a3017";
-
-// custom_user -> Chase Bank
 export const TEST_ACCESS_TOKEN =
   "access-sandbox-229476cf-25bc-46d2-9ed5-fba9df7a5d63";
 
@@ -60,8 +50,8 @@ export const topCategoryStyles = {
     bg: "bg-blue-25",
     circleBg: "bg-blue-100",
     text: {
-      main: "text-blue-900",
-      count: "text-blue-700",
+      main: "text-blue-800",
+      count: "text-blue-600",
     },
     progress: {
       bg: "bg-blue-100",

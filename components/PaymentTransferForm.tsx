@@ -93,7 +93,6 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
     setIsLoading(false);
   };
 
-  // Refactor forminput
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(submit)} className="flex flex-col">
@@ -101,13 +100,13 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
           control={form.control}
           name="senderBank"
           render={() => (
-            <FormItem className="border-t border-gray-200">
+            <FormItem className="border-t border-slate-200">
               <div className="payment-transfer_form-item pb-6 pt-5">
                 <div className="payment-transfer_form-content">
-                  <FormLabel className="text-14 font-medium text-gray-700">
+                  <FormLabel className="text-14 font-medium text-slate-700">
                     Select Source Bank
                   </FormLabel>
-                  <FormDescription className="text-12 font-normal text-gray-600">
+                  <FormDescription className="text-10 font-normal text-slate-500">
                     Select the bank account you want to transfer funds from
                   </FormDescription>
                 </div>
@@ -130,13 +129,13 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem className="border-t border-gray-200">
+            <FormItem className="border-t border-slate-200">
               <div className="payment-transfer_form-item pb-6 pt-5">
                 <div className="payment-transfer_form-content">
-                  <FormLabel className="text-14 font-medium text-gray-700">
+                  <FormLabel className="text-14 font-medium text-slate-700">
                     Transfer Note (Optional)
                   </FormLabel>
-                  <FormDescription className="text-12 font-normal text-gray-600">
+                  <FormDescription className="text-10 font-normal text-slate-500">
                     Please provide any additional information or instructions
                     related to the transfer
                   </FormDescription>
@@ -157,10 +156,10 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
         />
 
         <div className="payment-transfer_form-details">
-          <h2 className="text-18 font-semibold text-gray-900">
+          <h2 className="text-18 font-semibold text-slate-700">
             Bank account details
           </h2>
-          <p className="text-16 font-normal text-gray-600">
+          <p className="text-14 font-normal text-slate-500">
             Enter the bank account details of the recipient
           </p>
         </div>
@@ -169,9 +168,9 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="border-t border-gray-200">
+            <FormItem className="border-t border-slate-200">
               <div className="payment-transfer_form-item py-5">
-                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-gray-700">
+                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-slate-700">
                   Recipient&apos;s Email Address
                 </FormLabel>
                 <div className="flex w-full flex-col">
@@ -193,9 +192,9 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
           control={form.control}
           name="sharableId"
           render={({ field }) => (
-            <FormItem className="border-t border-gray-200">
+            <FormItem className="border-t border-slate-200">
               <div className="payment-transfer_form-item pb-5 pt-6">
-                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-gray-700">
+                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-slate-700">
                   Receiver&apos;s Plaid Sharable Id
                 </FormLabel>
                 <div className="flex w-full flex-col">
@@ -217,9 +216,9 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
           control={form.control}
           name="amount"
           render={({ field }) => (
-            <FormItem className="border-y border-gray-200">
+            <FormItem className="border-y border-slate-200">
               <div className="payment-transfer_form-item py-5">
-                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-gray-700">
+                <FormLabel className="text-14 w-full max-w-[280px] font-medium text-slate-700">
                   Amount
                 </FormLabel>
                 <div className="flex w-full flex-col">

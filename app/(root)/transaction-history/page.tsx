@@ -38,11 +38,11 @@ const TransactionHistory = async ({
       <div className="transactions-header">
         <HeaderBox
           title="Transaction History"
-          subtext="See your bank details and transactions."
+          subtext="Here are your personal banking details and transactions."
         />
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div className="transactions-account">
           <div className="flex flex-col gap-2">
             <h2 className="text-18 font-bold text-white">

@@ -15,6 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Footer from "./Footer";
+import PlaidLink from "./PlaidLink";
 
 const MobileNav = ({ user }: MobileNavProps) => {
   const pathname = usePathname();
@@ -36,13 +37,13 @@ const MobileNav = ({ user }: MobileNavProps) => {
             className="flex cursor-pointer items-center gap-1 px-4"
           >
             <Image
-              src="/icons/logo.png"
-              width={120}
-              height={120}
+              src="/icons/FinMate-Logo.png"
+              width={90}
+              height={90}
               alt="FinMate Logo"
-              className="w-12 h-12 "
+              className=" w-12 h-12"
             />
-            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
+            <h1 className="text-26 font-ibm-plex-serif font-bold text-slate-700">
               FinMate
             </h1>
           </Link>
@@ -85,7 +86,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                     </SheetClose>
                   );
                 })}
-                USER
+                <PlaidLink user={user} />
               </nav>
             </SheetClose>
             <Footer user={user} type="mobile" />

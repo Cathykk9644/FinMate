@@ -33,7 +33,7 @@ const CategoryBadge = ({ category }: CategoryBadgeProps) => {
 const TransactionsTable = ({ transactions }: TransactionTableProps) => {
   return (
     <Table>
-      <TableHeader className="bg-[#f9fafb]">
+      <TableHeader className="bg-[#f9fafb] text-slate-700">
         <TableRow>
           <TableHead className="px-2">Transaction</TableHead>
           <TableHead className="px-2">Amount</TableHead>
@@ -60,7 +60,7 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
             >
               <TableCell className="max-w-[250px] pl-2 pr-10">
                 <div className="flex items-center gap-3">
-                  <h1 className="text-14 truncate font-semibold text-[#344054]">
+                  <h1 className="text-14 truncate font-semibold text-slate-500">
                     {removeSpecialCharacters(t.name)}
                   </h1>
                 </div>
@@ -80,11 +80,11 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                 <CategoryBadge category={status} />
               </TableCell>
 
-              <TableCell className="min-w-32 pl-2 pr-10">
+              <TableCell className="min-w-32 pl-2 pr-10 text-slate-500">
                 {formatDateTime(new Date(t.date)).dateTime}
               </TableCell>
 
-              <TableCell className="pl-2 pr-10 capitalize min-w-24">
+              <TableCell className="pl-2 pr-10 capitalize min-w-24 text-slate-500">
                 {t.paymentChannel}
               </TableCell>
 

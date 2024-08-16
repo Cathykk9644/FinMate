@@ -26,9 +26,11 @@ const HomePage = async ({ searchParams: { id, page } }: SearchParamProps) => {
       <div className="home-content">
         <HeaderBox
           type="greeting"
-          title="👋 👋 Welcome"
+          title="👋 Hey Welcome"
           user={loggedIn?.firstName || "Guest"}
-          subtext="Access and manage your personal account and transaction effectively."
+          subtext="Easily tap into the fun side of managing your personal account and transactions!
+
+"
         />
         <BalanceBox
           accounts={accountsData}

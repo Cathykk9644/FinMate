@@ -90,12 +90,12 @@ const AuthForm = ({ type }: { type: string }) => {
       <header className="flex flex-col gap-5 md:gap-8">
         <Link href="/" className="flex cursor-pointer items-center gap-1">
           <Image
-            src="/icons/logo.svg"
-            width={34}
-            height={34}
+            src="/icons/FinMate-Logo.png"
+            width={60}
+            height={60}
             alt="FinMate Logo"
           />
-          <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
+          <h1 className="text-26 font-ibm-plex-serif font-bold text-purple-700">
             FinMate
           </h1>
         </Link>
@@ -215,7 +215,7 @@ const AuthForm = ({ type }: { type: string }) => {
           <footer className="flex justify-center gap-1">
             <p className="text-14 font-normal text-gray-600">
               {type === "sign-in"
-                ? "Don't have an account?"
+                ? "New to FinMate?"
                 : "Already got an account?"}
             </p>
             <Link

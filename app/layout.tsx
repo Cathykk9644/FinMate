@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "FinMate",
   description: "FinMate is a modern banking platform for everyone.",
   icons: {
-    icon: "/icons/logo.png",
+    icon: "/icons/FinMate-Logo.png",
   },
 };
 

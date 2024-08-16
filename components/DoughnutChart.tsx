@@ -16,7 +16,7 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
       {
         label: "Banks",
         data: balances,
-        backgroundColor: ["#A0DEFF", "#5AB2FF"],
+        backgroundColor: ["#F1EAFF", "#D0A2F7"],
       },
     ],
     labels: accountNames,

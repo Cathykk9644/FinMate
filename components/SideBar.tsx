@@ -16,7 +16,7 @@ const SideBar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="flex mb-12 cursor-pointer items-center gap-2">
           <Image
-            src="/icons/logo.png"
+            src="/icons/FinMate-Logo.png"
             width={120}
             height={120}
             alt="FinMate Logo"

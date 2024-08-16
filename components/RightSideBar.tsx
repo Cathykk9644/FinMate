@@ -15,7 +15,7 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
         <div className="profile-banner" />
         <div className="profile">
           <div className="profile-img">
-            <span className="text-4xl font-bold text-blue-400">
+            <span className="text-4xl font-bold text-purple-400">
               {user.firstName[0]}
             </span>
           </div>
@@ -32,7 +32,7 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
       {/* 2nd part - right-sidebar bank card */}
       <section className="banks">
         <div className="flex w-full justify-between">
-          <h2 className="header-2">My Banks</h2>
+          <h2 className="header-2">My Pocket</h2>
           <Link href="/" className="flex gap-2">
             <Image src="/icons/plus.svg" width={20} height={20} alt="plus" />
             <h2 className="text-14 font-semibold text-gray-500">Add Banks</h2>
@@ -63,7 +63,7 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
         )}
 
         <div className="mt-10 flex flex-1 flex-col gap-6">
-          <h2 className="header-2">Top categories</h2>
+          <h2 className="header-2">Top Spending Categories</h2>
 
           <div className="space-y-5">
             {categories.map((category, index) => (
