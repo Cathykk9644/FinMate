@@ -106,7 +106,7 @@ const AuthForm = ({ type }: { type: string }) => {
             <p className="text-14 mt-2 font-normal text-gray-500">
               {user
                 ? "Connect your account to get started"
-                : "Please enter your details here"}
+                : "Let's begin our FinMate Journey from here..."}
             </p>
           </h1>
         </div>
