@@ -33,3 +33,4 @@ Password: test1234
 - ✅ Funds Transfer: Supports secure transfers of funds to other accounts using Dwolla, complete with mandatory fields like the recipient's bank ID.
 - ✅ Optimized Responsiveness: Ensures a seamless and consistent user experience across all device types—desktop, tablet, and mobile—through responsive design.
 - ✅ Form Validation: Integrates React Hook Form coupled with Zod for robust and efficient input validation, ensuring that all user inputs meet predefined standards for enhanced security and user experience.
+- ✅ Issue Tracking with Sentry: Integrates Sentry for real-time error tracking and monitoring, ensuring quick identification and resolution of production issues to maintain high application reliability and performance.
