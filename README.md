@@ -3,13 +3,12 @@
 
 FinMate is a streamlined financial SaaS platform built using Next.js and TypeScript, enabling users to connect multiple bank accounts and manage transactions in real-time. It integrates Plaid for bank connectivity and Dwolla for fund transfers, features robust SSR authentication, and uses Sentry for issue tracking. Tailored with TailwindCSS for a responsive design, it ensures a consistent user experience across all devices, while real-time updates and detailed transaction histories enhance effective financial management.
 
-- [Deployed Site:](https://finmate-sigma.vercel.app/sign-in)
+[Deployed Site:](https://finmate-sigma.vercel.app/sign-in)
 
-Test Account Info
+- Test Account Info
 Username: lilyjobs@test.com
 Password: test1234
 
-Password: test1234
 
 # 👩‍💻 Tech Stack
 - Next.js
