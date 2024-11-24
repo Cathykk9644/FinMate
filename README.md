@@ -6,7 +6,7 @@ FinMate is a streamlined financial SaaS platform built using Next.js and TypeScr
 - [Visit here for deployed site](https://finmate-sigma.vercel.app/sign-in) / https://finmate-sigma.vercel.app/sign-in
 
 - Test Account Info / 
-Username: lilyjobs@test.com
+Username: cathywong@test.com
 Password: test1234
 
 
